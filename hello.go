@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"github.com/sammorrowdrums/goplay/test"
 	"log"
 	"net/http"
 	"strconv"
@@ -10,6 +11,8 @@ import (
 )
 
 func main() {
+
+	test.SayHi("Sam")
 	mw := multiWeatherProvider{
 		openWeatherMap{},
 		weatherUnderground{apiKey: "73e2e205cb8f0a0e"},
